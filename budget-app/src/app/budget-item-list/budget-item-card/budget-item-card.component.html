@@ -1,0 +1,9 @@
+<div class="root">
+  <div class="budget-item" [ngClass]="{'income':isIncome, 'expense':!isIncome}">
+    <div class="description">
+      <p>{{budgetItem.description}}</p>
+    </div>
+    <div class="amount">{{budgetItem.amount}}</div>
+  </div>
+  <div class="x-icon-button" (click)="onDeleteItem()"></div>
+</div>
